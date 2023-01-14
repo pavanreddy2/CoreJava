@@ -1,0 +1,121 @@
+TypeCasting:-
+===========
+
+DataTypes:-
+
+Advantages: -
+============
+1) we are able to identify the memory size to store data on the basis of dataType.
+2) we are able to identify the range value to assign to the variables.
+
+Types of DataTypes: -
+
+1) primitive DataType
+     a) Numeric DataType
+          x) Integral DataType     Size									Default Value
+						  1) byte  -->   1 bytes of memory   ===> 			0
+							2) short -->  2 bytes of memory  ====>        0
+							3) int    --> 4 bytes of memory ===>          0
+							4)long  --->  8 bytes of memory  ===>         0L
+          y) Non-Integral DataType
+
+						 1) float   --> 4 bytes of memory  ===>        0.0f
+						 2) double  --> 8 bytes of memory   ===>       0.0d
+     b) Non-Numeric DataType
+				char       ---> 2 bytes of memory       ===>         ' '
+				boolean    ---> 1 bit                    ===>       false
+
+2) User Defined DataType
+    classes, abstract Classes, interfaces, Array.
+
+Note: No fixed memory allocations for the user defined DataTypes, the size of the data 
+        is totally depending on the data at runtime.
+Note: Defalut value for the user defined DataType is null.
+
+Note : 1 byte is equivalent to eight bits.
+
+=====================================================================================
+
+==> To calculate the range for dataTypes, we are using Two Constants like 
+      MIN_VALUE and MAX_VALUE
+Note: Classes representation of Primitive DataTypes is called as Wrapper classes.
+      
+      DataTypes    Wrapper Classes
+
+      byte ----> java.lang.Byte
+      short ---> java.lang.Short
+      int ------> java.lang.Integer
+      long ----->java.lang.Long
+      float -----> java.lang.Float
+      double ------>java.lang.Double
+      char  ==>  java.lang.Character ==>  No MIN and MAX
+      boolean   ==> Boolean  ==> No MIN and MAX Value
+
+============================================================================================
+
+
+TypeCasting: -
+==============
+ process of converting data from one datatype to another datatype is called "Type Casting".
+
+
+In java , we have Two Types of Type Casting.
+1) Primitive DataType TypeCasting
+2) User defined DataType TypeCasting.
+
+User defined DataType TypeCasting:-
+==================================
+The process of converting data from one user defined dataType to another user defined dataType is 
+called User defined DataType TypeCasting.
+==> If we want to perform user defined dataType TypeCasting we need either "extend" or "implement" relation b/w two user defined DataType.
+
+
+1) Primitive DataType TypeCasting: -
+  =================================
+  The process of converting data from one primitive dataType to another primitive DataType.
+
+   2 Two Types:-
+  ==============
+  a) Implicit: 
+    
+  b) explicit
+
+Implicit: 
+==========
+Process of converting data from lower DataType to higher DataType is called implicit.
+
+To perform implicit TypeCasting, Java has provided a predefined chart.
+ 
+
+     1			2			 4			8				4      8
+   byte -> short -> int -> long -> float -> double
+                      ^
+                      |
+                    char
+								  2
+
+
+Example: 
+   Class Room A :    25 Banches  --> per Bench 3 students --> 75 members
+   Class Room B :    50 Banches  --> per Bench 1 student -->  50 members
+
+explicit: -
+=======
+Converting data from higher DataType to lower DataType is called as Explicit DataType TypeCasting.
+
+
+    double -> float -> long -> int -> short -> byte   
+
+
+ 
+
+
+
+     
+
+
+
+
+
+
+
