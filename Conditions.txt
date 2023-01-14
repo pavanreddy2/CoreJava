@@ -1,0 +1,103 @@
+Statements: -
+=============
+  Statements  is the collection of expression to prepare java applications, java is provided following statements.
+  
+  
+ 1) General Purpose Statements:-
+ ======================================
+  1) Declaring classes, abstract classes and interfaces.
+  2) Declaring variables and methods.
+  3) creating Objects.
+  4) accssing  Varibles and methods.
+  
+ 2) Conditional statements : -
+    ======================== 
+	    if , switch
+		
+ 3) Iterative statements:
+  =========================
+   for, while , do while
+   
+ 4) Transfer Statements 
+  =============================
+   break, continue and return.
+   
+ 5) Exception Handling Statements : 
+  ==================================
+  
+   throw, try-catch-finally.
+============================================================================
+
+   
+  Example:
+  
+      class StatementExample {
+	  
+	   public static String  addition () {    // static Method
+		
+			return "ABC";	
+	    }
+	   
+	
+	   
+	   public int  additin () {               // Non-static Method:
+	   
+	   return 10;
+	    }
+		
+		
+		public static void substraction () {
+				return
+		  }
+	   
+	   public static void main (String[] args0 {
+	    StatementExample a  = new StatementExample () ;
+	   }
+	     
+	  
+	   
+	      
+	      }
+	  
+	  
+	  }
+	  ===========================================================================
+	  
+	  Conditional Statements: 
+	  ===============================================
+	  These statements are able to allow to excute a block of instructions on the basis of particular expression.
+	  
+	  example : if , switch 
+	  
+	  Synatx : 
+	  
+		if (condition) {
+		 ---------------Instructions-----------
+		----------------------------------------
+		 }
+		 
+	 Syntax 2 : -
+	      
+		   if (condition) {
+		     ---------------instructions-----------
+			 ------------------------------
+		   
+		   } else {
+		       ----------------instructions-----------
+			   --------------------------------------
+			   }
+			   
+	Syntax 3 : -
+	     
+		   if (condition) {
+		      ----------------Instructions-----------
+		   } else if (condition) {
+		      ----------------------instructions-----------
+		   
+		   } else if (condition) {
+		    --------------------instructions--------------
+		   
+		   } else {
+		         ---------------instructions-------------
+		   
+		   }

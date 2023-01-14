@@ -1,0 +1,119 @@
+Iterative Statements: -
+============================
+for , while and do while
+
+
+for Loop : -
+==============
+  
+  Syntax : 
+               for (expr1 ; expr2 ; expr3) {
+			           ---------------------
+			        -----------------------
+					-------------------------
+				  }
+				  
+				example :    for (int i = 0 ; i < 10; i++) {
+				                
+								 System.out.println(i);
+								}
+								
+								
+								
+	Expr1 :    for ( int i= 0,float f =0.0f; i < 10, f < 10.0f; i++,f++ ) {
+	
+	                 
+					 
+					 }
+					 
+   Exp 2 : Condition ==> always it will excuted True
+   
+   Expr3 : 
+                 for (int i = 0; i < 10 ; System.out.println("hello")) {
+				           
+						      System.out.println(i);
+							   i = i + 1;
+						   }
+						   
+						   
+where we can use : -
+==============================
+
+In java applications, if we know the numbers if iterations over the loop of the body in advance before writing loop there we have to use "for" loop.
+
+Example : int [] a = {1,2,3,4,5,6};
+          size = a.length() ; starting index for array is 0, and index ending is 4.
+		  
+		  
+		  
+DrawBacks : -
+==========
+1) we must declare a separate variable for looping purpose.
+2) At each and every iteration, we must execute the Conditional expression.
+3) At each and every iteration, we must perform the loop variable increament/ decreament Opearations.
+4) In above approach, we are able to get array elements by providing index value explicitly, in this case , they may be chance for getting the ArrayOutOfBound of Exception.
+
+
+for-each loop: -
+==============
+			int [] a = {1,2,3,4,5,6};
+
+Syntax : -
+==============
+     for (Array_DataType  var_name : Array_Ref_var) {
+	 
+			Syso(a);
+	    }
+		
+		
+Example : for (int v1 : a ) {
+			System.out.println(v1);
+     } 
+====================================================
+		
+when we can Use these means : 
+
+for Each is applicable for retrieving elements from arrays & from collections only.
+it is not applicable for normal Iterations over the code.
+
+================================================================================================================================
+
+While Loop : 
+====================
+
+   Syntax : while (condition) {
+   ------------------------
+   ------------------------------------
+   
+        }
+		
+		example : int i = 0;
+		           while (i < 10 ) {
+				    
+					 System.out.println(i);
+					 
+					 i = i + 1;
+					}
+
+Do while loop: 
+=====================
+    Syntax : - 
+	                   do {
+					   
+					     -----------------
+						 ----------------
+						 ------------------
+						} while (condtion);
+
+======================================================================================================================
+
+
+Transfer Statements : -
+===========================
+ break, continue and return
+ 
+ 
+
+
+
+

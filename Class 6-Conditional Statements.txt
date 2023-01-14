@@ -1,0 +1,191 @@
+Statements: -
+=============
+  Statements  is the collection of expression to prepare java applications, java is provided following statements.
+  
+  
+ 1) General Purpose Statements:-
+ ======================================
+  1) Declaring classes, abstract classes and interfaces.
+  2) Declaring variables and methods.
+  3) creating Objects.
+  4) accssing  Varibles and methods.
+  
+ 2) Conditional statements : -
+    ======================== 
+	    if , switch
+		
+ 3) Iterative statements:
+  =========================
+   for, while , do while
+   
+ 4) Transfer Statements 
+  =============================
+   break, continue and return.
+   
+ 5) Exception Handling Statements : 
+  ==================================
+  
+   throw, try-catch-finally.
+============================================================================
+
+   
+  Example:
+  
+      class StatementExample {
+	  
+	   public static String  addition () {    // static Method
+		
+			return "ABC";	
+	    }
+	   
+	
+	   
+	   public int  additin () {               // Non-static Method:
+	   
+	   return 10;
+	    }
+		
+		
+		public static void substraction () {
+				return
+		  }
+	   
+	   public static void main (String[] args0 {
+	    StatementExample a  = new StatementExample () ;
+	   }
+	     
+	  
+	   
+	      
+	      }
+	  
+	  
+	  }
+	  ===========================================================================
+	  
+	  Conditional Statements: 
+	  ===============================================
+	  These statements are able to allow to excute a block of instructions on the basis of particular expression.
+	  
+	  example : if , switch 
+	  
+	  Synatx : 
+	  
+		if (condition) {
+		 ---------------Instructions-----------
+		----------------------------------------
+		 }
+		 
+	 Syntax 2 : -
+	      
+		   if (condition) {
+		     ---------------instructions-----------
+			 ------------------------------
+		   
+		   } else {
+		       ----------------instructions-----------
+			   --------------------------------------
+			   }
+			   
+	Syntax 3 : -
+	     
+		   if (condition) {
+		      ----------------Instructions-----------
+		   } else if (condition) {
+		      ----------------------instructions-----------
+		   
+		   } else if (condition) {
+		    --------------------instructions--------------
+		   
+		   } else {
+		         ---------------instructions-------------
+		   
+		   }
+=============================================================================================
+public class Example4 {
+	
+	int i ;   // global i = 0  
+	
+	void m1() {
+		int j ;
+		
+		System.out.println(j); // j = no value
+		
+	}
+	public static void main(String[] args) {
+
+		
+		Example4 p1 = new Example4();
+		System.out.println(p1.i);
+		//System.out.println(p1.j);
+	}
+
+}
+
+
+
+Note :- 
+     In java Default values are existed for class level variable only, not for the local variable. if we declare any variable at class level without explicit initialization
+	 the JVM will provide the default value for the respective class level variable.. but if we declare any local variable without initialization then JVM will not provide default
+	 values for respective local variable. If we are trying to access local variable without providing initialization then compiler will raise an error like 
+	 "Varible xxxM might not have been initalized".
+	 
+=================================================================================================================================================================================
+
+Switch: 
+===========
+
+ "if" condition statement is able to check single condition, but switch is able to check multiple conditions.
+ 
+ In general , we will use "switch" in menu driven application.
+ 
+ 
+ example : 1. push 
+           2. pop 
+		   3.peek
+		   4.exist
+		   
+		   your option : 1
+		     enter element to push : aaaa
+			 push operation is success.
+			 
+		 again displaying menu:
+		  1. push 
+           2. pop 
+		   3.peek
+		   4.exist
+		   
+		   your option : 2
+		     enter element to pop : aaaaddsg
+			 pop operation is success. 
+			 
+			 
+		 again displaying menu:
+		   1. push 
+           2. pop 
+		   3.peek
+		   4.exist
+		   
+		   
+		   
+Syntax : - 
+        switch (var) {
+		    case 1:
+			   ------instructions--------
+		    break;
+			
+			case 2:
+			  ------instructions--------
+		    break;
+			
+			case n:
+			------instructions--------
+			
+			break;
+			
+			default:
+			 ------instructions--------
+			 
+			 break;
+		
+		}
