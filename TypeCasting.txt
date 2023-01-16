@@ -76,31 +76,66 @@ called User defined DataType TypeCasting.
 
    2 Two Types:-
   ==============
-  a) Implicit: 
+  a) Implicit (or) Widening Type Casting: 
     
-  b) explicit
+  b) Explicit (or) Narrowing Type Casting:
 
-Implicit: 
-==========
-Process of converting data from lower DataType to higher DataType is called implicit.
+ Implicit (or) Widening Type Casting:  
+=====================================
+Process of converting data from lower DataType to higher DataType is called Implicit TypeCasting.It is also known as Widening Type Casting.
+This TypeCasting is done automatically. we don't need to explicitly mention the dataType.
+
+Advantages: -
+========
+1) It is safe because there is no chance to lose data.
+
+
 
 To perform implicit TypeCasting, Java has provided a predefined chart.
- 
-
-     1			2			 4			8				4      8
-   byte -> short -> int -> long -> float -> double
-                      ^
-                      |
-                    char
-								  2
 
 
+		  1		2		2	  4      8        4       8	
+		byte -> short -> char -> int -> long -> float -> double
+
+Note : 
+ 1) Don't think lower dataType as less memory and less size and also higher DataType as high memory and high size.
+ 2) Here memory size is not a criteria.
+ 3) which dataType is able to store less Data i.e., Lower DataType and Which is store high Data i.e., Higher DataType.
+ 4) Here Size is not consider.
+
+
+       
 Example: 
    Class Room A :    25 Banches  --> per Bench 3 students --> 75 members
-   Class Room B :    50 Banches  --> per Bench 1 student -->  50 members
+   Class Room B :    50 Banches  --> per Bench 1 student -->  50 members.
 
-explicit: -
-=======
+Here, Totally depending on the internal Data arrangement. on the basis of internal data Arrangement only, we are going to decide which data is higer and lower.
+that means we are going to decide which dataType is store more data and less data.
+==> Each and Every DataType is having its own internal data arrangement.
+
+==> internal Data arrangement is different one dataType to another DataType.
+
+
+Example : - 
+
+     public class TypeCastingExample {
+           public static void main (String[] args) {
+
+             // variable type is int
+              int x = 7;  //lower dataType
+         
+			// Automatically Converts the Integer type into float Type
+               float y = x;
+  
+			System.out.println("Before Conversion: "+x);
+			System.out.println("After Conversion: "+ y);	
+              
+            }
+
+        }
+
+Explicit (or) Narrowing Type Casting:
+========================================
 Converting data from higher DataType to lower DataType is called as Explicit DataType TypeCasting.
 
 
