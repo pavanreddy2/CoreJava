@@ -136,10 +136,32 @@ Example : -
 
 Explicit (or) Narrowing Type Casting:
 ========================================
-Converting data from higher DataType to lower DataType is called as Explicit DataType TypeCasting.
+Converting data from higher DataType to lower DataType is called as Explicit DataType TypeCasting.It is also known as Narrowing TypeCasting.
+
+It is done manually by the programmer which means we have to explicitly mentioned about the dataType to be converted. If we do not perform casting then compiler reports a compiler-time error.
 
 
-    double -> float -> long -> int -> short -> byte   
+1) In these TypeCasting there is chance of losing the Data.
+
+
+     double -> float -> long -> int -> char -> short -> byte 
+
+
+Example : - 
+
+       public class ExplicitExample {
+
+            public static void main (String[] args) {
+             
+			 //Variable type float 
+  
+                 float x = 7.98f;
+
+      
+                int y = x;
+			}
+
+          }
 
 
  

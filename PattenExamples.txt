@@ -1,0 +1,68 @@
+1) find the Sum of the number?
+  
+
+i/p : 1234
+o/p : 10
+
+
+Java Pattern 
+=============
+ 
+1) display the folowing pattern?
+    
+* * * *  *  * *  * *  * 
+* * * *  *  * *  * *  * 
+* * * *  *  * *  * *  * 
+* * * *  *  * *  * *  * 
+* * * *  *  * *  * *  * 
+* * * *  *  * *  * *  * 
+* * * *  *  * *  * *  * 
+* * * *  *  * *  * *  * 
+* * * *  *  * *  * *  * 
+* * * *  *  * *  * *  * 
+
+
+System.out.print ==> display values in side by side.    * * * * * * * 
+
+System.out.println ==> Display values in Row by Row.  
+
+* ==> complted
+*
+*
+*
+*
+
+2) Display the Following pattern
+
+*
+**
+***
+****
+*****
+******
+*******
+********
+*********
+**********
+
+3) Display the following pattern
+
+**********
+*********
+********
+*******
+******
+****
+***
+**
+*
+
+
+for (int i = 1; i <=10; i++){
+     for (int j = 1; j <=11 - i; j++) {
+
+       System.out.print("* ");
+		}
+	  System.out.println():
+
+}
