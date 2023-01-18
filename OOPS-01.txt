@@ -1,0 +1,315 @@
+Object Oriented Features: -
+===========================
+To Describe the nature of the Object Orientation, Obeject Orientation has provided the following features.
+
+1) class
+2) Object 
+3) Encapsulation
+4) Inheritance
+5) Polymorphism
+6) Abstraction
+
+
+Example: 
+
+In the sameway, if we want to know some description about Object Orientation.if we want to get what is what, kind of these object Orientation.then we want to go Object Orientation Features.
+
+
+There are 2 types of Object Oriented Features:-
+=================================================
+1) Object Based Programming Language
+2) Object Oriented Programming Language (OOPS).
+
+Object Oriented Programming Language (OOPS):-
+=================================================
+If any Programming langauge does not have builtin Objects then that Programming language is called as Object Oriented Programming Language.
+
+  Example : java, C++
+
+Object Based Programming Language:-
+=====================================
+If any programming language have builtin objects then that programming language is called Object Based Programming language.
+
+Example : javaScript, Ruby, Visual Basic.
+
+
+
+Class Vs Object:
+===================
+class : 
+=========
+1)Class is group of elements, which is having common properties and behaviour is called as Class.
+2) Class is virtual
+3) Class is Virtual Encapsulation of properties and behaviour.
+4) Class is Generalization.
+5) Class is BluePrint for the Objects.
+6) Class is model for the All the objects.
+ 
+
+Object : -
+============
+
+1) Among group of elements, if any individual elements having physical properties and physical behaviour then that individual element is called as Object.
+2) Object is Real
+3) Object is Physical encapsulation of properties and behaviour.
+4) object is specializatiom
+5) Object is Instance of the class.
+
+
+===================================================================================================
+
+Encapsulation: -
+================
+
+The process of combining data and coding part is called as "Encapsulation".
+
+We can achieve Encapsulation by using Java beans.
+
+(or)
+
+All fields as the single entity, to achieve this we have to make the variables as private and make the setters and getters methods as public.
+
+
+this: - this is a keyword, which is used to refer the current instance of the class.
+
+
+
+Example:-
+==========
+   class Employee {
+	
+		//Variables
+       private String eid;
+       private String ename;
+
+
+
+//Setter and getters
+	 public void setEid (String eid) {
+           this.eid = eid;
+        }
+      public String getEid() {
+          return eid;
+		}
+
+      public void setEname(String ename) {
+   
+        this.ename = ename;
+		}
+      public String getEname() {
+         return ename;
+		}
+
+   
+    }
+
+public class EncapsulationExample {
+
+	public static void main(String[] args) {
+
+		Employee employee = new Employee();
+		employee.setEid("E-101");
+		employee.setEname("Suresh");
+
+		System.out.println(employee.getEid());
+		System.out.println(employee.getEname());
+
+		System.out.println("************************************");
+		Employee employee1 = new Employee();
+		employee1.setEid("E-102");
+		employee1.setEname("Venkat");
+
+		System.out.println(employee1.getEid());
+		System.out.println(employee1.getEname());
+		
+		System.out.println("************************************");
+		Employee employee2 = new Employee();
+		employee2.setEid("E-103");
+		employee2.setEname("Madhu");
+
+		System.out.println(employee2.getEid());
+		System.out.println(employee2.getEname());
+	}
+}
+===========================================================
+
+Abstraction:-
+===============
+The process of hidding unnessary implementation and the process of showing neccessary implementation is called as Abstraction.
+
+we can achieve Abstarction by using
+
+packages 
+Abstract classes
+Interfaces.
+
+In java applications, both Abstarction and Encapsulation are able to improve "Security".
+
+=====================================================================================
+
+Inheritance :-
+================
+It is relation between entity classes, it will bring properties{Variables} and behaviours {Methods} from one entity class {super class} to another entity {subclass}.
+
+By Using these Inheritance we can improve Code Reusability.
+
+To achieve Inheritance we have use "extends".
+
+
+Example : 
+===========
+ class Employee {
+
+
+    String eid;
+    String ename;
+    float esal;
+
+  
+   public void getEmployeeDetails() {
+
+		}
+  }
+
+  class Manager {
+
+ 	String eid;
+    String ename;
+    float esal;
+
+
+}
+
+ class Accountant {
+   
+    String eid;
+    String ename;
+    float esal;
+
+
+}
+
+=================
+Solution:
+
+  class Employee {
+
+
+    String eid;
+    String ename;
+    float esal;
+
+  
+   public void getEmployeeDetails() {
+
+		}
+  }
+
+
+public Manager extends Employeee {
+
+   --Reuse Varibles and Methods from Employee classes.
+}
+
+
+class Accountant extends Employee {
+  --Reuse Varibles and Methods from Employee classes.
+
+   }
+
+============================================================================================================
+
+
+Polymorphism : -
+================
+
+  One task as perform in many ways. is called Polymorphism.
+
+
+   (Or)
+
+  Polymorphism is greak word, where poly means many and morphism means form and structure.
+
+If one thing existed in more than one form then it is called as Polymorphism.
+
+Advnatage : 
+=============
+Flexibity to design application
+
+Two Types of Polymorphism:
+======================
+1) static Polymorphism 
+2) Dynamic Polymorphism
+
+
+1) Static Polymorphism : -
+===========================
+
+if the polymorphism is existed at compiler time , then it is called as Static Polymorphism.
+
+Example: Method Overloading 
+
+Method Overloading:-
+==============---===
+
+In a class we have the same methods but different in the  parameters is called as Method Overloading.
+example : 
+============
+      class Employee {
+ 
+
+        public void method1(int i) {
+
+
+			}
+        public void method1(String s) {
+			}
+
+      }
+
+
+2) Dynamic Polymorphism: 
+-=========================
+If the Polymorphism is existed at Runtime , then it is called Dynamic Polymorphism.
+
+Example : Method Overriding.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
