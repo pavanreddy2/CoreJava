@@ -1,0 +1,325 @@
+1) sum of the digits?
+
+
+class Example {
+
+  int id;  // 0
+  String name ; // null
+
+
+public void display () {
+  System.out.println(id + " " + name) ; 
+
+	}
+
+ public static void main (String[] args) {
+
+ Example e1 = new Example(); // object 
+ Example e2 = new Example(); // object 
+ Example e3 = new Example(); // object 
+
+    e1.m1();   // 0 null
+    e2.m1();  //  0 null
+    e3.m1();  //  0 null
+
+	}
+
+}
+
+O/p : 0 null
+      
+   
+
+Class Syntax: 
+============
+Container in java: Container is a java fundamental element, it able to manage same other java elements like Variable, methods, Constructors and block.
+
+==> 3 Types of Containers: 
+   1) class
+  2) Abstract Class
+ 3) Interface
+
+1.Class : -
+===========
+ In Java Application to represents entities we to use the classes.
+Ex: Student,Employee, Customer . Account , Product.
+ 
+
+Entities ----> classes
+Entities Data (or) Entites Attributes : Variables
+Entities Behaviour ---> Methods
+
+Example : class Transaction {
+
+       int id;
+       String accNo;
+       String accName;
+       String accType;
+
+  public void deposite (String accNo, int dep-Amt) {
+
+
+     }
+
+public void withDraw (String accNo, int wd-Amt) {
+
+	}
+
+public void transferFunds (String sourceAccount, String targetAccount,int transferAmount) {
+
+   }
+}
+
+==============================================================================
+To Prepare clasess in java applications, we will use following syntax:
+
+   public 
+[access modifier] class ClassName [extends superClass] [implements InterfaceList] {
+    
+---Variables-----
+----Methods-----
+-------Constructors---------
+
+----block----------
+
+------Enums----------
+----Classes ---------------
+----abstract classes ------
+
+----interfaces-------------
+
+
+}
+
+========================================================================================
+
+
+Access Modifiers:
+=======================
+
+There are Two Types Access Modifiers in java;
+
+
+1) Access modifier : -
+
+
+2) NOn - Access Modifier 
+
+ 
+1) Access modifier : -
+   To define the scope of the java Programming elements we can use 
+
+   public , private , protected, default.
+
+public: 
+=======
+
+  This is most common access level and whenever the public access specifier is used with entity that particular entity is accessible throughtout from within (or) outside the class and 
+   within (or) outside of the package.
+
+Example : 
+
+//Package
+package com.oops;
+
+public class A {
+
+	
+	public void msg() {
+		System.out.println("hello");
+	}
+}
+
+//declaring another package
+package com.oops.accessmodifier;
+
+import com.oops.A;
+
+public class AccessModifier1 {
+
+	public static void main(String[] args) {
+		
+		A a = new A();
+		a.msg();
+	}
+}
+
+=========================================================================
+
+Private: 
+==========
+when an entity is private, then this entity cannot be accessed outside the class. A private entity can only accessible from within the class.
+
+Example : 
+
+package com.oops;
+    class A {
+
+	private int data = 40;// Variable
+	
+	
+	//Method
+	private void msg() {
+		System.out.println("hello");
+	}
+
+
+package com.oops;
+
+public class Simple {
+
+	public static void main(String[] args) {
+		
+		A a = new A();
+		
+		System.out.println(a.data);
+		
+		System.out.println(a.msg());
+	}
+}
+
+===============================================================================================
+
+
+protected:-
+=============
+The protected access modifier is accessible within package and outside the package through inheritance only.
+
+Example :
+
+package com.oops;
+
+public class A {
+
+	protected void msg() {
+		
+		System.out.println("Protected access Modifier");
+	}
+}
+
+
+
+package com.oops.accessmodifier;
+
+import com.oops.A;
+
+public class AccessModifier1 extends A{
+
+	public static void main(String[] args) {
+	
+		
+		AccessModifier1 a1 = new AccessModifier1();
+		a1.msg();
+	}
+}
+
+=============================================================================================================
+
+default: 
+----------
+if you don't use any access modifier, it is treated as default by defalut. The defalut modifier is accessible only within package.It cannot be accessed from outside the package.
+
+Example:
+
+package com.oops;
+
+ class A {
+
+	 void msg() {
+		
+		System.out.println("Protected access Modifier");
+	}
+}
+
+
+package com.oops;
+
+public class Simple {
+
+	public static void main(String[] args) {
+  
+		
+		A a = new A();
+		
+		a.msg();
+	}
+}
+
+===================================================================================
+
+
+
+Access Modifier   			insideClass 			inside Package   			outsidePackage Subclass						outsidePackage
+=============				============			=================			======================						=================
+
+private 					Yes					  No							No										No
+
+
+protected                    Yes					  Yes						No (possible when using Inheritance)             No
+
+
+Default					Yes       			 yes 						No									     No
+
+
+public                       Yes					Yes							Yes										Yes
+
+
+
+=========================================================================================================================================================
+
+
+2) NOn - Access Modifier :
+------------------------------
+
+
+There are used with classes, variables , methods and constructors etc.The Non-access Modifier define the behaviour of the entities to JVM.
+
+-->static, final , abstract, transient,  volatile,  synchronised.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
